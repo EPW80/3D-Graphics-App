@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "copy-public": "copyfiles -u 2 src/view/* dist/public && copyfiles -u 1 public/script.js dist/public",
-    "start": "ts-node src/app.ts",
-    "start:prod": "node dist/app.js",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'npm run build && node dist/app.js'",
-    "build": "npx tsc && webpack && npm run copy-public",
-    "compile": "npx tsc"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "copy-public": "copyfiles -u 2 src/view/* dist/public && copyfiles -u 1 public/assets/* dist/public/assets && copyfiles -u 1 public/* dist/public",
+  "start": "ts-node src/app.ts",
+  "start:prod": "node dist/app.js",
+  "dev": "nodemon --watch 'src/**/*.ts' --exec 'npm run build && node dist/app.js'",
+  "build": "npx tsc && webpack && npm run copy-public",
+  "compile": "npx tsc"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

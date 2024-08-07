@@ -3,8 +3,8 @@
 # build/
 
 # If not using a dedicated output directory:
-*.js
-*.js.map
+# *.js
+# *.js.map
 
 node_modules/
 
