@@ -3,19 +3,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
-const path_1 = __importDefault(require("path"));
-const app = (0, express_1.default)();
-const port = 3000;
+var express_1 = __importDefault(require("express"));
+var path_1 = __importDefault(require("path"));
+var app = (0, express_1.default)();
+var port = 3000;
 // Serve static files from the 'public' directory in 'dist'
 app.use(express_1.default.static(path_1.default.join(__dirname, "../dist/public")));
-app.get("/", (req, res) => {
+app.get("/", function (req, res) {
     res.sendFile(path_1.default.join(__dirname, "../dist/public/index.html"));
 });
-app.get("/shape-data", (req, res) => {
+app.get("/shape-data", function (req, res) {
     // Generate random shape data
-    const shapesData = [];
-    for (let i = 1; i <= 50; i++) {
+    var shapesData = [];
+    for (var i = 1; i <= 50; i++) {
         shapesData.push({
             id: i,
             type: ["box", "sphere", "cylinder"][Math.floor(Math.random() * 3)], // Randomly choose a shape type
@@ -33,6 +33,6 @@ app.get("/shape-data", (req, res) => {
     }
     res.json(shapesData);
 });
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(port, function () {
+    console.log("Server is running on http://localhost:".concat(port));
 });
