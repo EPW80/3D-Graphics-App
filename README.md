@@ -97,9 +97,14 @@ Project Structure
 
 - Run the application: Start the development server with npm run dev. The application will be accessible at <http://localhost:3000>.
 
-- Interactions
+### Interactions
+
 - View and interact with the 3D models: The application renders a 3D scene containing a crystal lattice and robotic parts. Use your mouse or touch input to rotate and zoom the camera.
 - Dynamic data updates: The application periodically fetches new shape data from the server and updates the 3D models in real-time.
 - Customization
 - Lighting: The lighting setup in the scene is defined in SceneModel.ts. You can customize the ambient light, directional light, and point light to achieve different visual effects.
 - Shapes and animations: The shape generation and animation logic is implemented in CrystalLattice.ts and RoboticPart.ts. Modify these files to change the appearance and behavior of the 3D models.
+
+## Output
+
+[](./src/public/assets/threejs.gif)
