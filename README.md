@@ -79,6 +79,8 @@ Project Structure
 └── README.md
 ```
 
+-
+
 ### Scripts
 
 - npm run build: Compile TypeScript files and bundle the application using Webpack.
