@@ -107,4 +107,4 @@ Project Structure
 
 ## Output
 
-[](./src/public/assets/threejs.gif)
+![](./src/public/assets/threejs.gif)
